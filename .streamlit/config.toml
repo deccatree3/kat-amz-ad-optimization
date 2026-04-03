@@ -1,5 +1,2 @@
-[server]
-port = 7003
-
 [theme]
 base = "light"
