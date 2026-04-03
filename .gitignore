@@ -2,6 +2,8 @@ raw/
 history.db
 overrides.json
 app_backup.py
+nn-ad-optimization/
+.claude/
 __pycache__/
 *.pyc
 .env
