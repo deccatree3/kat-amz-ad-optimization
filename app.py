@@ -26,10 +26,11 @@ JUDGMENT_OPTIONS = [
     "🔗 확인 필요 (ASIN)",
 ]
 
-BASE_DIR          = os.path.dirname(os.path.abspath(__file__))
-TRANSLATIONS_FILE = os.path.join(BASE_DIR, "translations.json")
-OVERRIDES_FILE    = os.path.join(BASE_DIR, "overrides.json")
-DB_FILE           = os.path.join(BASE_DIR, "history.db")
+REPO_DIR          = os.path.dirname(os.path.abspath(__file__))
+WRITE_DIR         = REPO_DIR if os.name == "nt" else "/tmp"  # 클라우드는 /tmp만 쓰기 가능
+TRANSLATIONS_FILE = os.path.join(REPO_DIR,  "translations.json")
+OVERRIDES_FILE    = os.path.join(WRITE_DIR, "overrides.json")
+DB_FILE           = os.path.join(WRITE_DIR, "history.db")
 
 
 # ── 유틸 ──────────────────────────────────────────────────────────────────────
