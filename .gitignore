@@ -1,0 +1,7 @@
+raw/
+history.db
+overrides.json
+app_backup.py
+__pycache__/
+*.pyc
+.env
